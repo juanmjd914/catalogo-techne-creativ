@@ -35,12 +35,17 @@ export function CategoryNav({ activeId, lang, onSelect }: CategoryNavProps) {
       borderBottom: '1px solid var(--tc-border)',
       boxShadow: '0 1px 8px rgba(0,0,0,0.06)',
     }}>
-      <div ref={railRef} className="tc-no-scroll"
+      <div ref={railRef} className="tc-no-scroll tc-nav-rail"
         style={{
           display: 'flex', overflowX: 'auto', gap: 0,
           padding: '0 20px', maxWidth: 1280, margin: '0 auto',
           justifyContent: 'center',
         }}>
+        <style>{`
+          @media (max-width: 768px) {
+            .tc-nav-rail { justify-content: flex-start !important; }
+          }
+        `}</style>
         {CATEGORIES.map(cat => {
           const on = cat.id === activeId
           return (

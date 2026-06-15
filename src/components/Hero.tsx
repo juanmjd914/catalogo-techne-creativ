@@ -9,16 +9,17 @@ interface HeroProps {
 export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
   return (
     <section style={{
-      position: 'relative', height: '100vh', overflow: 'hidden',
+      position: 'relative', height: '100svh', overflow: 'hidden',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       background: 'linear-gradient(135deg, #0094FD 0%, #00BFBF 40%, #00F7FC 70%, #0094FD 100%)',
-      width: '100%', maxWidth: '100vw',
+      width: '100%', maxWidth: '100%',
     }}>
 
       {/* Video hero */}
       <video autoPlay muted loop playsInline preload="none"
         style={{
-          position: 'absolute', inset: 0, width: '100%', height: '100%',
+          position: 'absolute', top: 0, left: 0,
+          width: '100%', height: '100%',
           objectFit: 'cover', zIndex: 0,
         }}>
         <source src="/hero-catalogo.mp4" type="video/mp4" />
@@ -27,7 +28,7 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
       {/* Overlay oscuro */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 1,
-        background: 'rgba(0,0,0,0.45)',
+        background: 'rgba(0,0,0,0.52)',
       }} />
 
 
@@ -104,9 +105,39 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
         </a>
       </div>
 
+      {/* Logo + Título centrado */}
+      <div style={{
+        position: 'relative', zIndex: 10,
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        textAlign: 'center', padding: '0 24px', maxWidth: 680,
+        animation: 'tcFadeIn .9s ease both',
+        marginBottom: 120,
+      }}>
+        <img src="/images/logo-techne-creativ.svg" alt="Techne Creativ"
+          className="hero-logo"
+          style={{ height: 80, width: 'auto', marginBottom: 28 }} />
+        <h1 className="hero-title" style={{
+          fontFamily: 'var(--font-heading)', fontSize: 'clamp(24px,5vw,56px)',
+          fontWeight: 800, color: '#fff', lineHeight: 1.1,
+          letterSpacing: '-0.02em', marginBottom: 14,
+          textShadow: '0 2px 24px rgba(0,0,0,0.45)',
+        }}>
+          Tu negocio merece una presencia digital de alto nivel.
+        </h1>
+        <p style={{
+          fontFamily: 'var(--font-body)', fontSize: 'clamp(11px,1.8vw,15px)',
+          color: 'rgba(255,255,255,0.72)', letterSpacing: '0.2em',
+          textTransform: 'uppercase',
+        }}>
+          Diseño · Branding · Marketing
+        </p>
+      </div>
+
       <style>{`
         @media (max-width: 480px) {
-          .hero-btns { bottom: 80px !important; gap: 10px !important; }
+          .hero-logo { height: 56px !important; margin-bottom: 20px !important; }
+          .hero-title { font-size: 22px !important; }
+          .hero-btns { bottom: 32px !important; gap: 10px !important; }
           .hero-btn-primary, .hero-btn-wa {
             padding: 12px 20px !important;
             font-size: 13px !important;
