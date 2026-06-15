@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tc-bg:        #F5F7FA;
+  --color-tc-white:     #FFFFFF;
+  --color-tc-cyan:      #00F7FC;
+  --color-tc-cyan-dark: #00BFBF;
+  --color-tc-blue:      #0094FD;
+  --color-tc-magenta:   #FF006B;
+  --color-tc-yellow:    #FFFC00;
+  --color-tc-text:      #111827;
+  --color-tc-muted:     #6B7280;
+  --color-tc-border:    #E5E7EB;
+}
+
+:root {
+  --tc-bg:        #F5F7FA;
+  --tc-white:     #FFFFFF;
+  --tc-cyan:      #00F7FC;
+  --tc-cyan-dark: #00BFBF;
+  --tc-blue:      #0094FD;
+  --tc-magenta:   #FF006B;
+  --tc-yellow:    #FFFC00;
+  --tc-text:      #111827;
+  --tc-muted:     #6B7280;
+  --tc-border:    #E5E7EB;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-body:    'Poppins', system-ui, sans-serif;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--tc-bg);
+    color: var(--tc-text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--tc-border); }
+  ::-webkit-scrollbar-thumb { background: var(--tc-cyan-dark); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--tc-blue); }
+
+  input, button, textarea, select { font-family: var(--font-body); }
+}
+
+/* Scrollbar oculto en nav horizontal */
+.tc-no-scroll::-webkit-scrollbar { display: none; }
+.tc-no-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* ───────────── Animaciones ───────────── */
+
+@keyframes tcFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tcBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: .7; }
+  50%       { transform: translateX(-50%) translateY(8px); opacity: 1; }
+}
+
+@keyframes tcSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes tcPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .35; }
+}
+
+@keyframes tcFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Anillo decorativo del Hero */
+@keyframes tcRingRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes tcRingRotateReverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
