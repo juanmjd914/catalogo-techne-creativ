@@ -13,7 +13,13 @@ export function PortfolioSection({ lang, activeId }: PortfolioSectionProps) {
     : portfolio.filter(p => p.category === activeId)
 
   return (
-    <section style={{ maxWidth: 1280, margin: '0 auto', padding: '48px 28px 80px' }}>
+    <section className="portfolio-section" style={{ maxWidth: 1280, margin: '0 auto', padding: '48px 28px 80px' }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .portfolio-section { padding: 32px 16px 60px !important; }
+          .portfolio-section .port-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
       <div style={{ marginBottom: 32, display: 'flex', alignItems: 'center', gap: 14 }}>
         <div style={{ width: 3, height: 26, background: 'var(--tc-cyan-dark)', borderRadius: 2, flexShrink: 0 }} />
         <h2 style={{
@@ -28,7 +34,7 @@ export function PortfolioSection({ lang, activeId }: PortfolioSectionProps) {
         </span>
       </div>
 
-      <div style={{
+      <div className="port-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
         gap: 20,

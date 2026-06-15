@@ -60,7 +60,7 @@ export function ServicesSection({ lang }: ServicesSectionProps) {
       }} />
 
       {/* Statement central */}
-      <div style={{
+      <div className="srv-header" style={{
         maxWidth: 1280, margin: '0 auto', padding: '80px 48px 64px',
         display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center',
         position: 'relative',
@@ -103,7 +103,7 @@ export function ServicesSection({ lang }: ServicesSectionProps) {
       </div>
 
       {/* Separador ornamental */}
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'flex', alignItems: 'center', gap: 16 }}>
+      <div className="srv-sep" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'flex', alignItems: 'center', gap: 16 }}>
         <div style={{ flex: 1, height: 1, background: 'var(--tc-border)' }} />
         <span style={{ color: 'var(--tc-cyan-dark)', fontSize: 14, opacity: 0.4, letterSpacing: 6 }}>✦ ✦ ✦</span>
         <div style={{ flex: 1, height: 1, background: 'var(--tc-border)' }} />
@@ -112,7 +112,7 @@ export function ServicesSection({ lang }: ServicesSectionProps) {
       {/* Grid de 4 servicios */}
       <div style={{
         maxWidth: 1280, margin: '0 auto',
-        padding: '56px 48px 80px',
+        padding: '56px 48px 80px', boxSizing: 'border-box',
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
         gap: 1,
@@ -216,6 +216,11 @@ export function ServicesSection({ lang }: ServicesSectionProps) {
       <style>{`
         @media (max-width: 900px) { .srv-grid { grid-template-columns: repeat(2, 1fr) !important; } }
         @media (max-width: 500px) { .srv-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 768px) {
+          .srv-header { padding: 48px 20px 40px !important; }
+          .srv-sep { padding: 0 20px !important; }
+          .srv-grid { padding: 36px 20px 60px !important; }
+        }
       `}</style>
     </section>
   )

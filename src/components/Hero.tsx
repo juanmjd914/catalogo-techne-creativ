@@ -12,6 +12,7 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
       position: 'relative', height: '100vh', overflow: 'hidden',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       background: 'linear-gradient(135deg, #0094FD 0%, #00BFBF 40%, #00F7FC 70%, #0094FD 100%)',
+      width: '100%', maxWidth: '100vw',
     }}>
 
       {/* Video hero */}
@@ -49,12 +50,14 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
       </button>
 
       {/* Botones centrados abajo */}
-      <div style={{
+      <div className="hero-btns" style={{
         position: 'absolute', bottom: 100, left: 0, right: 0, zIndex: 2,
         display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap',
+        padding: '0 24px',
         animation: 'tcFadeIn .9s ease both',
       }}>
         <button onClick={onScrollDown}
+          className="hero-btn-primary"
           style={{
             padding: '14px 32px', borderRadius: 8, border: 'none',
             background: '#fff', color: 'var(--tc-blue)',
@@ -74,6 +77,7 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
         </button>
 
         <a href="https://wa.me/56965174454" target="_blank" rel="noopener noreferrer"
+          className="hero-btn-wa"
           style={{
             padding: '14px 32px', borderRadius: 8,
             border: '2px solid rgba(255,255,255,0.7)',
@@ -99,6 +103,18 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
           {lang === 'es' ? 'Agendar una llamada' : 'Schedule a call'}
         </a>
       </div>
+
+      <style>{`
+        @media (max-width: 480px) {
+          .hero-btns { bottom: 80px !important; gap: 10px !important; }
+          .hero-btn-primary, .hero-btn-wa {
+            padding: 12px 20px !important;
+            font-size: 13px !important;
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      `}</style>
 
       {/* Scroll indicator */}
       <div onClick={onScrollDown} style={{
