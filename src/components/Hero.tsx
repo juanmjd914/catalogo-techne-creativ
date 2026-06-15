@@ -105,38 +105,8 @@ export function Hero({ lang, onToggleLang, onScrollDown }: HeroProps) {
         </a>
       </div>
 
-      {/* Logo + Título centrado */}
-      <div style={{
-        position: 'relative', zIndex: 10,
-        display: 'flex', flexDirection: 'column', alignItems: 'center',
-        textAlign: 'center', padding: '0 24px', maxWidth: 680,
-        animation: 'tcFadeIn .9s ease both',
-        marginBottom: 120,
-      }}>
-        <img src="/images/logo-techne-creativ.svg" alt="Techne Creativ"
-          className="hero-logo"
-          style={{ height: 80, width: 'auto', marginBottom: 28 }} />
-        <h1 className="hero-title" style={{
-          fontFamily: 'var(--font-heading)', fontSize: 'clamp(24px,5vw,56px)',
-          fontWeight: 800, color: '#fff', lineHeight: 1.1,
-          letterSpacing: '-0.02em', marginBottom: 14,
-          textShadow: '0 2px 24px rgba(0,0,0,0.45)',
-        }}>
-          Tu negocio merece una presencia digital de alto nivel.
-        </h1>
-        <p style={{
-          fontFamily: 'var(--font-body)', fontSize: 'clamp(11px,1.8vw,15px)',
-          color: 'rgba(255,255,255,0.72)', letterSpacing: '0.2em',
-          textTransform: 'uppercase',
-        }}>
-          Diseño · Branding · Marketing
-        </p>
-      </div>
-
       <style>{`
         @media (max-width: 480px) {
-          .hero-logo { height: 56px !important; margin-bottom: 20px !important; }
-          .hero-title { font-size: 22px !important; }
           .hero-btns { bottom: 32px !important; gap: 10px !important; }
           .hero-btn-primary, .hero-btn-wa {
             padding: 12px 20px !important;
