@@ -23,7 +23,7 @@ export function Footer({ lang }: FooterProps) {
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16,
       }}>
         <img src="/images/logo-techne-creativ.svg" alt="Techne Creativ"
-          style={{ height: 90, width: 'auto', marginBottom: 4 }} />
+          style={{ height: 140, width: 'auto', marginBottom: 4 }} />
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 15, fontStyle: 'italic',
