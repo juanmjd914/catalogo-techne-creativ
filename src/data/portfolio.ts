@@ -181,4 +181,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://mediumturquoise-snake-736611.hostingersite.com/',
     price: '$400.000 CLP',
   },
+  {
+    id: 21,
+    name: 'Redragon Themis 2',
+    category: 'otros',
+    image: '/images/redragon-themis2.webp',
+    description: 'Landing premium de producto gaming con scroll storytelling, partículas y animaciones cinematográficas',
+    url: 'https://landing-themis2-redragon.vercel.app',
+    price: '$180.000 CLP',
+  },
 ]
