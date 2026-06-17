@@ -2,11 +2,14 @@ import { useState } from 'react'
 import type { PortfolioItem, Lang } from '../types'
 
 const CATEGORY_LABELS: Record<string, { es: string; en: string; color: string }> = {
-  web:    { es: 'Web & E-commerce', en: 'Web & E-commerce', color: '#0094FD' },
-  gastro: { es: 'Gastronomía',       en: 'Gastronomy',        color: '#FF006B' },
-  salud:  { es: 'Salud & Belleza',   en: 'Health & Beauty',   color: '#00BFBF' },
-  menu:   { es: 'Menú Digital',      en: 'Digital Menu',      color: '#FFAA00' },
-  otros:  { es: 'Otros negocios',    en: 'Other businesses',  color: '#6B7280' },
+  'landing-basica':     { es: 'Landing Page Básica',   en: 'Basic Landing Page',    color: '#00BFBF' },
+  'landing-premium':    { es: 'Landing Page Premium',  en: 'Premium Landing Page',  color: '#0094FD' },
+  'corporativo':        { es: 'Sitio Corporativo',      en: 'Corporate Website',     color: '#FF006B' },
+  'menu-basico':        { es: 'Menú Digital Básico',   en: 'Basic Digital Menu',    color: '#FFAA00' },
+  'menu-premium':       { es: 'Menú Digital Premium',  en: 'Premium Digital Menu',  color: '#FF8C00' },
+  'citas':              { es: 'Sistema de Citas',       en: 'Booking System',        color: '#00E676' },
+  'ecommerce-basico':   { es: 'E-commerce Básico',     en: 'Basic E-commerce',      color: '#9C27B0' },
+  'ecommerce-completo': { es: 'E-commerce Completo',   en: 'Full E-commerce',       color: '#FF006B' },
 }
 
 interface PortfolioCardProps {
