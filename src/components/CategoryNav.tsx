@@ -8,15 +8,15 @@ interface CategoryNavProps {
 }
 
 const CATEGORIES: { id: PortfolioCategory; es: string; en: string }[] = [
-  { id: 'all',               es: 'Todos',                  en: 'All' },
-  { id: 'landing-basica',    es: 'Landing Page Básica',    en: 'Basic Landing Page' },
-  { id: 'landing-premium',   es: 'Landing Page Premium',   en: 'Premium Landing Page' },
-  { id: 'corporativo',       es: 'Sitio Corporativo',      en: 'Corporate Website' },
-  { id: 'menu-basico',       es: 'Menú Digital Básico',    en: 'Basic Digital Menu' },
-  { id: 'menu-premium',      es: 'Menú Digital Premium',   en: 'Premium Digital Menu' },
-  { id: 'citas',             es: 'Sistema de Citas',       en: 'Booking System' },
-  { id: 'ecommerce-basico',  es: 'E-commerce Básico',      en: 'Basic E-commerce' },
-  { id: 'ecommerce-completo',es: 'E-commerce Completo',    en: 'Full E-commerce' },
+  { id: 'all',               es: 'Todos',              en: 'All' },
+  { id: 'landing-basica',    es: 'Landing Básica',     en: 'Basic Landing' },
+  { id: 'landing-premium',   es: 'Landing Premium',    en: 'Premium Landing' },
+  { id: 'corporativo',       es: 'Corporativo',        en: 'Corporate' },
+  { id: 'menu-basico',       es: 'Menú Básico',        en: 'Basic Menu' },
+  { id: 'menu-premium',      es: 'Menú Premium',       en: 'Premium Menu' },
+  { id: 'citas',             es: 'Citas Online',       en: 'Booking' },
+  { id: 'ecommerce-basico',  es: 'E-comm Básico',      en: 'Basic E-comm' },
+  { id: 'ecommerce-completo',es: 'E-comm Completo',    en: 'Full E-comm' },
 ]
 
 export function CategoryNav({ activeId, lang, onSelect }: CategoryNavProps) {
@@ -57,7 +57,7 @@ export function CategoryNav({ activeId, lang, onSelect }: CategoryNavProps) {
               style={{
                 padding: '15px 16px', border: 'none', background: 'none',
                 cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0,
-                fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: on ? 600 : 400,
+                fontFamily: 'var(--font-body)', fontSize: 11.5, fontWeight: on ? 600 : 400,
                 color: on ? 'var(--tc-cyan-dark)' : 'var(--tc-muted)',
                 borderBottom: on ? '2px solid var(--tc-cyan-dark)' : '2px solid transparent',
                 transition: 'color .2s, border-color .2s', marginBottom: -1,
