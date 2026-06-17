@@ -8,12 +8,15 @@ interface CategoryNavProps {
 }
 
 const CATEGORIES: { id: PortfolioCategory; es: string; en: string }[] = [
-  { id: 'all',   es: 'Todos',            en: 'All' },
-  { id: 'web',   es: 'Web & E-commerce', en: 'Web & E-commerce' },
-  { id: 'gastro',es: 'Gastronomía',      en: 'Gastronomy' },
-  { id: 'salud', es: 'Salud & Belleza',  en: 'Health & Beauty' },
-  { id: 'menu',  es: 'Menú Digital',     en: 'Digital Menu' },
-  { id: 'otros', es: 'Otros negocios',   en: 'Other businesses' },
+  { id: 'all',               es: 'Todos',                  en: 'All' },
+  { id: 'landing-basica',    es: 'Landing Page Básica',    en: 'Basic Landing Page' },
+  { id: 'landing-premium',   es: 'Landing Page Premium',   en: 'Premium Landing Page' },
+  { id: 'corporativo',       es: 'Sitio Corporativo',      en: 'Corporate Website' },
+  { id: 'menu-basico',       es: 'Menú Digital Básico',    en: 'Basic Digital Menu' },
+  { id: 'menu-premium',      es: 'Menú Digital Premium',   en: 'Premium Digital Menu' },
+  { id: 'citas',             es: 'Sistema de Citas',       en: 'Booking System' },
+  { id: 'ecommerce-basico',  es: 'E-commerce Básico',      en: 'Basic E-commerce' },
+  { id: 'ecommerce-completo',es: 'E-commerce Completo',    en: 'Full E-commerce' },
 ]
 
 export function CategoryNav({ activeId, lang, onSelect }: CategoryNavProps) {
