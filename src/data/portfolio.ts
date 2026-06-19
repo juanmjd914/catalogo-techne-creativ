@@ -200,6 +200,15 @@ export const portfolio: PortfolioItem[] = [
     price: '$160.000 CLP',
   },
   {
+    id: 24,
+    name: 'KURO SUSHI',
+    category: 'menu-premium',
+    image: '/images/kuro-sushi.webp',
+    description: 'Menú digital con backend e inteligencia artificial para generar contenido para redes sociales',
+    url: 'https://kuro-sushi-dun.vercel.app',
+    price: '$400.000 CLP',
+  },
+  {
     id: 23,
     name: 'VERDE Restaurant',
     category: 'menu-basico',
