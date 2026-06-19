@@ -200,6 +200,15 @@ export const portfolio: PortfolioItem[] = [
     price: '$160.000 CLP',
   },
   {
+    id: 25,
+    name: 'PetCare Veterinaria',
+    category: 'citas',
+    image: '/images/petcare-veterinaria.webp',
+    description: 'Sitio web con backend, sistema de agenda y gestión de citas para clínica veterinaria',
+    url: 'https://petcare-veterinaria.vercel.app',
+    price: '$700.000 CLP',
+  },
+  {
     id: 24,
     name: 'KURO SUSHI',
     category: 'menu-premium',
