@@ -199,4 +199,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://menu-napoles.vercel.app',
     price: '$160.000 CLP',
   },
+  {
+    id: 23,
+    name: 'VERDE Restaurant',
+    category: 'menu-basico',
+    image: '/images/verde-restaurant.webp',
+    description: 'Menú digital para restaurante contemporáneo fusion con hero split, filtro de platos, stats animados y WhatsApp integrado',
+    url: 'https://verde-restaurant.vercel.app',
+    price: '$160.000 CLP',
+  },
 ]
