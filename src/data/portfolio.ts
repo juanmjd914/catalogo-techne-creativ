@@ -190,4 +190,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://landing-themis2-redragon.vercel.app',
     price: '$300.000 CLP',
   },
+  {
+    id: 22,
+    name: 'Pizzería Nápoles',
+    category: 'menu-basico',
+    image: '/images/pizzeria-napoles.webp',
+    description: 'Menú digital para pizzería italiana con filtro de categorías, galería, sección de historia y WhatsApp integrado',
+    url: 'https://menu-napoles.vercel.app',
+    price: '$160.000 CLP',
+  },
 ]
