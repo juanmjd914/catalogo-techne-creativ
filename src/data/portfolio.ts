@@ -218,6 +218,15 @@ export const portfolio: PortfolioItem[] = [
     price: '$400.000 CLP',
   },
   {
+    id: 26,
+    name: 'NUVÉ',
+    category: 'ecommerce-basico',
+    image: '/images/nuve-tienda-moda.webp',
+    description: 'Tienda de moda premium con carrito, checkout y confirmación por WhatsApp',
+    url: 'https://nuve-tienda-moda.vercel.app',
+    price: 'Desde $600.000 CLP',
+  },
+  {
     id: 23,
     name: 'VERDE Restaurant',
     category: 'menu-basico',
