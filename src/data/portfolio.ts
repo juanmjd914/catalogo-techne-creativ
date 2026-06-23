@@ -227,6 +227,15 @@ export const portfolio: PortfolioItem[] = [
     price: 'Desde $600.000 CLP',
   },
   {
+    id: 27,
+    name: 'APEX SPORT CO.',
+    category: 'ecommerce-basico',
+    image: '/images/apex-sport-co.webp',
+    description: 'Tienda de equipamiento deportivo con carrito, checkout y confirmación por WhatsApp',
+    url: 'https://apex-sport-co-ecommerce.vercel.app',
+    price: 'Desde $600.000 CLP',
+  },
+  {
     id: 23,
     name: 'VERDE Restaurant',
     category: 'menu-basico',
