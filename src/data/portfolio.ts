@@ -227,6 +227,15 @@ export const portfolio: PortfolioItem[] = [
     price: 'Desde $600.000 CLP',
   },
   {
+    id: 28,
+    name: 'La Merecure',
+    category: 'landing-basica',
+    image: '/images/la-merecure.webp',
+    description: 'Landing page para empanadas venezolanas con menú, combos y botón WhatsApp',
+    url: 'https://la-merecure-empanadas.vercel.app',
+    price: '$150.000 CLP',
+  },
+  {
     id: 27,
     name: 'APEX SPORT CO.',
     category: 'ecommerce-basico',
