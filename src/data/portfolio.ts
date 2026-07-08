@@ -141,7 +141,7 @@ export const portfolio: PortfolioItem[] = [
     name: 'Yunque',
     category: 'corporativo',
     image: '/images/servicios-meb-innova.webp',
-    description: 'Sitio corporativo para empresa de soluciones tecnológicas',
+    description: 'Sitio web corporativo para empresas de soluciones',
     url: 'https://mediumseagreen-boar-538820.hostingersite.com/index.html',
     price: '$450.000 CLP',
   },
