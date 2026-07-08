@@ -4,3 +4,5 @@ dist/
 .env.*
 /*.webp
 /hero.mp4
+
+.vercel

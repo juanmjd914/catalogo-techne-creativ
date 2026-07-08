@@ -138,7 +138,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: 16,
-    name: 'Servicios Meb Innova',
+    name: 'Yunque',
     category: 'corporativo',
     image: '/images/servicios-meb-innova.webp',
     description: 'Sitio corporativo para empresa de soluciones tecnológicas',
