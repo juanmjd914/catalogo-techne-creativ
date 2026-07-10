@@ -253,4 +253,22 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://verde-restaurant.vercel.app',
     price: '$160.000 CLP',
   },
+  {
+    id: 29,
+    name: 'Entre Muros',
+    category: 'corporativo',
+    image: '/images/entre-muros.webp',
+    description: 'Sitio corporativo de arquitectura con video interactivo al hacer scroll',
+    url: 'https://entre-muros-sigma.vercel.app',
+    price: '$450.000 CLP',
+  },
+  {
+    id: 30,
+    name: 'Óptica Focus Lab',
+    category: 'ecommerce-completo',
+    image: '/images/optica-focus-lab.webp',
+    description: 'E-commerce premium de óptica con producto 3D interactivo y carrito',
+    url: 'https://optica-focus-lab.vercel.app',
+    price: 'Desde $800.000 CLP',
+  },
 ]
