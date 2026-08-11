@@ -17,6 +17,7 @@ const CATEGORIES: { id: PortfolioCategory; es: string; en: string }[] = [
   { id: 'citas',             es: 'Citas Online',       en: 'Booking' },
   { id: 'ecommerce-basico',  es: 'E-comm Básico',      en: 'Basic E-comm' },
   { id: 'ecommerce-completo',es: 'E-comm Completo',    en: 'Full E-comm' },
+  { id: 'sistema-a-medida',  es: 'Sistema a Medida',   en: 'Custom System' },
 ]
 
 export function CategoryNav({ activeId, lang, onSelect }: CategoryNavProps) {

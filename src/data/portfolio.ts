@@ -271,4 +271,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://optica-focus-lab.vercel.app',
     price: 'Desde $800.000 CLP',
   },
+  {
+    id: 31,
+    name: 'Representaciones J&J Barquisimeto',
+    category: 'sistema-a-medida',
+    image: '/images/representaciones-jj-barquisimeto.webp',
+    description: 'Sistema administrativo a medida para repuestos automotrices: CRM, facturación, portal de cliente, despacho e importación de listas de precio en PDF al inventario',
+    url: 'https://representaciones-jj-barquisimeto-ap.vercel.app/',
+    price: 'Desde $1.500.000 CLP',
+  },
 ]

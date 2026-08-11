@@ -10,6 +10,7 @@ const CATEGORY_LABELS: Record<string, { es: string; en: string; color: string }>
   'citas':              { es: 'Sistema de Citas',       en: 'Booking System',        color: '#00E676' },
   'ecommerce-basico':   { es: 'E-commerce Básico',     en: 'Basic E-commerce',      color: '#9C27B0' },
   'ecommerce-completo': { es: 'E-commerce Completo',   en: 'Full E-commerce',       color: '#FF006B' },
+  'sistema-a-medida':   { es: 'Sistema a Medida',      en: 'Custom System',         color: '#5C6BC0' },
 }
 
 interface PortfolioCardProps {
