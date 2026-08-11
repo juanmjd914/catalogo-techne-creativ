@@ -280,4 +280,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://representaciones-jj-barquisimeto-ap.vercel.app/',
     price: 'Desde $1.500.000 CLP',
   },
+  {
+    id: 32,
+    name: 'Distribuidora Central VE',
+    category: 'ecommerce-basico',
+    image: '/images/distribuidora-central-ve.webp',
+    description: 'E-commerce mayorista de consumo masivo con catálogo de productos y pedido directo por WhatsApp',
+    url: 'https://paleturquoise-spider-272672.hostingersite.com/',
+    price: 'Desde $600.000 CLP',
+  },
 ]
