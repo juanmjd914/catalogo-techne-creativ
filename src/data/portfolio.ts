@@ -52,7 +52,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'landing-premium',
     image: '/images/hamburguesas-la-brutal.webp',
     description: 'Landing page y menú digital para hamburguesería',
-    url: 'https://magenta-wallaby-664107.hostingersite.com',
+    url: 'https://pink-deer-202275.hostingersite.com',
     price: '$300.000 CLP',
   },
   {
