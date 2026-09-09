@@ -178,7 +178,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'ecommerce-basico',
     image: '/images/zapateria-la-21.webp',
     description: 'Tienda online de calzado y accesorios',
-    url: 'https://mediumturquoise-snake-736611.hostingersite.com/',
+    url: 'https://indigo-squid-744806.hostingersite.com/',
     price: 'Desde $600.000 CLP',
   },
   {
