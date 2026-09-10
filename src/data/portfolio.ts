@@ -289,4 +289,13 @@ export const portfolio: PortfolioItem[] = [
     url: 'https://paleturquoise-spider-272672.hostingersite.com/',
     price: 'Desde $600.000 CLP',
   },
+  {
+    id: 33,
+    name: 'Kceros',
+    category: 'menu-premium',
+    image: '/images/kceros.webp',
+    description: 'Landing + menú digital completo con más de 40 productos, variantes y pedido directo por WhatsApp',
+    url: 'https://kaceros.com/',
+    price: '$200.000 CLP',
+  },
 ]
