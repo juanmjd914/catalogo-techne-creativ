@@ -133,7 +133,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'landing-basica',
     image: '/images/cursos-de-guitarra.webp',
     description: 'Landing page para academia de guitarra online',
-    url: 'https://khaki-gaur-332572.hostingersite.com/',
+    url: 'https://green-dotterel-956479.hostingersite.com/',
     price: '$150.000 CLP',
   },
   {
