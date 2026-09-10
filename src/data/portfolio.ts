@@ -296,6 +296,6 @@ export const portfolio: PortfolioItem[] = [
     image: '/images/kceros.webp',
     description: 'Landing + menú digital completo con más de 40 productos, variantes y pedido directo por WhatsApp',
     url: 'https://kaceros.com/',
-    price: '$200.000 CLP',
+    price: '$400.000 CLP',
   },
 ]
