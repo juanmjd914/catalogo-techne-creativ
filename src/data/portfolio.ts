@@ -52,7 +52,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'landing-premium',
     image: '/images/hamburguesas-la-brutal.webp',
     description: 'Landing page y menú digital para hamburguesería',
-    url: 'https://pink-deer-202275.hostingersite.com',
+    url: 'https://web-hamburguesas-la-brutal.vercel.app/',
     price: '$300.000 CLP',
   },
   {
@@ -97,7 +97,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'citas',
     image: '/images/servicios-de-odontologia.webp',
     description: 'Sitio web con backend, sistema de agenda y gestión de citas para clínica odontológica',
-    url: 'https://darkslateblue-lobster-753429.hostingersite.com',
+    url: 'https://el-buen-dentista.vercel.app/',
     price: '$700.000 CLP',
   },
   {
@@ -133,7 +133,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'landing-basica',
     image: '/images/cursos-de-guitarra.webp',
     description: 'Landing page para academia de guitarra online',
-    url: 'https://green-dotterel-956479.hostingersite.com/',
+    url: 'https://web-curso-guitarra-simon-mejias.vercel.app/',
     price: '$150.000 CLP',
   },
   {
@@ -178,7 +178,7 @@ export const portfolio: PortfolioItem[] = [
     category: 'ecommerce-basico',
     image: '/images/zapateria-la-21.webp',
     description: 'Tienda online de calzado y accesorios',
-    url: 'https://indigo-squid-744806.hostingersite.com/',
+    url: 'https://zapateria-la-21.vercel.app/',
     price: 'Desde $600.000 CLP',
   },
   {
@@ -297,5 +297,14 @@ export const portfolio: PortfolioItem[] = [
     description: 'Landing + menú digital completo con más de 40 productos, variantes y pedido directo por WhatsApp',
     url: 'https://kaceros.com/',
     price: '$400.000 CLP',
+  },
+  {
+    id: 34,
+    name: 'Asesor en Seguros',
+    category: 'landing-premium',
+    image: '/images/asesor-en-seguros.webp',
+    description: 'Landing premium para asesor de seguros de salud: formulario de cotización, planes y contacto directo por WhatsApp',
+    url: 'https://seguros-andrea-svjp.vercel.app/',
+    price: '$300.000 CLP',
   },
 ]
