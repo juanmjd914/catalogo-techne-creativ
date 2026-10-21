@@ -20,12 +20,12 @@ export const portfolio: PortfolioItem[] = [
     price: '$150.000 CLP',
   },
   {
-    id: 3,
-    name: 'Play Xbox Digital',
+    id: 35,
+    name: 'Playbox Venezuela',
     category: 'ecommerce-completo',
-    image: '/images/play-xbox-digital.webp',
-    description: 'Tienda digital de videojuegos y tarjetas Xbox',
-    url: 'https://playxboxdigital.com',
+    image: '/images/playbox-venezuela.webp',
+    description: 'Tienda digital de juegos PS5, PS4 y Xbox, suscripciones PS Plus y Game Pass',
+    url: 'https://playbox.mitienditadigitalve.com',
     price: 'Desde $800.000 CLP',
   },
   {
